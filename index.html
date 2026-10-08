@@ -3,14 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Elog</title>
+    <title>F&B Logistics Hub - Giải Pháp Vận Chuyển Trung Gian</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f4f4f9; }
-        h1 { color: #0066cc; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #2a5298;
+        }
+        .card h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        .flow-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .flow-steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .step {
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            padding: 15px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+        .step-num {
+            background: #2a5298;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px auto;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3c72;
+            color: white;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
-    <h1>Chào mừng đến với dự án Capstone E-Log!</h1>
-    <p>Trang web đang trong quá trình phát triển.</p>
+
+    <header>
+        <h1>Nền Tảng Điều Phối Logistics F&B</h1>
+        <p>Giải pháp kết nối tối ưu giữa Nhà cung cấp/Bên vận chuyển và Chuỗi nhà hàng F&B. Đảm bảo nguyên liệu tươi sống, đúng giờ và tối ưu chi phí.</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 style="text-align: center; color: #1e3c72;">Giá Trị Cốt Lõi</h2>
+        
+        <div class="services">
+            <div class="card">
+                <h3>Dành cho Chuỗi Nhà Hàng (F&B)</h3>
+                <ul>
+                    <li>Đặt nguyên liệu từ nhiều nhà cung cấp trên một giao diện.</li>
+                    <li>Theo dõi lộ trình xe vận chuyển theo thời gian thực.</li>
+                    <li>Đảm bảo tiêu chuẩn bảo quản lạnh/nguyên liệu tươi.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Dành cho Bên Vận Chuyển (Logistics)</h3>
+                <ul>
+                    <li>Tối ưu hóa tuyến đường giao hàng nhiều điểm (Multi-drop).</li>
+                    <li>Lấp đầy tải trọng xe, giảm thiểu chuyến xe rỗng.</li>
+                    <li>Tự động hóa đối soát công nợ và hóa đơn.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Hệ Thống Trung Gian (Platform)</h3>
+                <ul>
+                    <li>Thuật toán khớp đơn hàng tự động thông minh.</li>
+                    <li>Quản lý hợp đồng & bảo hiểm hàng hóa F&B.</li>
+                    <li>Báo cáo phân tích chi phí và hiệu suất giao hàng.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flow-section">
+            <h2 style="text-align: center; color: #1e3c72;">Quy Trình Hoạt Động</h2>
+            <div class="flow-steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h4>Đặt Đơn</h4>
+                    <p>Nhà hàng tạo đơn hàng nguyên liệu trên hệ thống.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h4>Điều Phối</h4>
+                    <p>Hệ thống tự động tìm xe vận chuyển tối ưu nhất.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h4>Giao Hàng</h4>
+                    <p>Theo dõi nhiệt độ & vị trí xe trong suốt hành trình.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <h4>Xác Nhận</h4>
+                    <p>Nhà hàng kiểm định chất lượng & ký nhận số.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© Dự án Capstone - Hệ thống Logistics Trung Gian F&B</p>
+    </footer>
+
 </body>
 </html>
